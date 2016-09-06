@@ -28,6 +28,7 @@ RUN apt-get -y install ca-certificates rpl pwgen
 #                              Recommends: postgis but it is not going to be installed
 RUN apt-get install -y postgresql-9.5-postgis-2.2 netcat
 ADD postgres.conf /etc/supervisor/conf.d/postgres.conf
+ADD postgresql_95.conf /etc/postgresql/9.5/main/postgresql.conf
 
 # Open port 5432 so linked containers can see them
 EXPOSE 5432
