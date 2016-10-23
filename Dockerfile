@@ -27,8 +27,11 @@ RUN apt-get -y install ca-certificates rpl pwgen
 # postgresql-9.3-postgis-2.1 : Depends: libgdal1h (>= 1.9.0) but it is not going to be installed
 #                              Recommends: postgis but it is not going to be installed
 RUN apt-get install -y postgresql-9.5-postgis-2.2 netcat
+<<<<<<< HEAD
 ADD postgres.conf /etc/supervisor/conf.d/postgres.conf
 ADD postgresql_95.conf /etc/postgresql/9.5/main/postgresql.conf
+=======
+>>>>>>> 9106a01c7f7295d14dd004ac6ec2c0d24172b072
 
 # Open port 5432 so linked containers can see them
 EXPOSE 5432
