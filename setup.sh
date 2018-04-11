@@ -16,7 +16,7 @@ echo "port = 5432" >> $CONF
 
 # Enable ssl
 
-echo "ssl = true" >> $CONF
+# echo "ssl = true" >> $CONF #this is also default
 #echo "ssl_ciphers = 'DEFAULT:!LOW:!EXP:!MD5:@STRENGTH' " >> $CONF
 #echo "ssl_renegotiation_limit = 512MB "  >> $CONF
 echo "ssl_cert_file = '/etc/ssl/certs/ssl-cert-snakeoil.pem'" >> $CONF
